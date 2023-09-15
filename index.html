@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-
-    <title>Bookstore</title>
+    <link rel="icon" type="image/x-icon" href="/assets/user.jpg">
+    <meta property="og:title" content="Book Store - Frontend Training 2023 - Trung Kien">
+    <meta property="og:description" content="Chào mừng bạn đến với Book Store, điểm đến lý tưởng dành cho những người yêu sách! Chương trình Frontend Training 2023 hân hạnh giới thiệu đến bạn một trải nghiệm mua sắm sách trực tuyến độc đáo và tận hưởng sự kết hợp hoàn hảo giữa công nghệ và văn hóa sách.">
+    <meta property="og:image" content="https://df-frontend-2023-assignment-1.vercel.app/assets/assignment-1.png">
+    <title>Book Store</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="header-container">
       <nav class="header">
         <div class="header-logo">
-          <a href="https://dwarves.foundation/" target="_blank">
+          <a style="margin: auto" href="https://dwarves.foundation/" target="_blank">
             <svg
               width="39"
               height="41"
@@ -70,7 +73,7 @@
             Add Book
           </button>
         </div>
-        <div>
+        <div style="overflow:auto;">
           <table id="table-book" class="table-book table-bordered">
             <thead>
               <tr>
