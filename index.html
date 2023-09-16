@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/assets/user.jpg">
     <meta property="og:title" content="Book Store - Frontend Training 2023 - Trung Kien">
-    <meta property="og:description" content="Chào mừng bạn đến với Book Store, điểm đến lý tưởng dành cho những người yêu sách! Chương trình Frontend Training 2023 hân hạnh giới thiệu đến bạn một trải nghiệm mua sắm sách trực tuyến độc đáo và tận hưởng sự kết hợp hoàn hảo giữa công nghệ và văn hóa sách.">
+    <meta property="og:description" content="
+    1,List Book: List of books corresponding to the topic.\n
+    2,Search By Book: Search for books based on book title.\n
+    3,Add, Edit and Delete Book: Add, edit and delete books.\n
+    4,Responsive and Pagination .
+"/>
     <meta property="og:image" content="https://df-frontend-2023-assignment-1.vercel.app/assets/assignment-1.png">
     <title>Book Store</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -40,13 +45,13 @@
           href="https://github.com/TrungKien2705"
           target="_blank"
           class="header-user"
+          title="Trung Kien"
         >
           <img
             class="user-image"
-            src="assets/user.jpg"
+            src="./assets/user.jpg"
             alt="User"
             aria-label="User"
-            srcset=""
           />
           <span class="user-name">Trung Kien</span>
         </a>
@@ -88,6 +93,16 @@
               <tr></tr>
             </tbody>
           </table>
+          <div class="pagination">
+            <a href="#" title="previous page">
+              <svg fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </a>
+            <a href="#">1</a>
+            <a href="#" class="page-active">2</a>
+            <a href="#" title="next page">
+              <svg fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </a>
+          </div>
         </div>
       </section>
       <section>
@@ -168,6 +183,7 @@
     <footer class="footer">
       Copyright © 2023 |
       <a
+        title="GitHub"
         rel="noopener noreferrer"
         href="https://github.com/TrungKien2705"
         target="_blank"
@@ -175,7 +191,8 @@
       >
       |
       <a
-        href="https://github.com/TrungKien2705/df-frontend-2023-assignment-1"
+        title="Source code"
+        href="https://github.com/TrungKien2705/df-frontend-2023"
         target="_blank"
         rel="noopener noreferrer"
         >Source code</a
