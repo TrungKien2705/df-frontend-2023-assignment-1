@@ -192,46 +192,7 @@ th, td {
 td{
     text-align: center;
 }
-.pagination {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 5px;
-    padding-top: 5px;
-    margin-top: 12px;
-}
-.pagination > a,
-.pagination > span {
-    color: #383838;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    margin: 0 2px 5px;
-    min-width: 20px;
-    padding: 0 10px;
-    height: 40px;
-    text-decoration: none;
-    position: relative;
-    border-radius: 5px;
-    font-family: Helvetica, Arial, sans-serif;
-}
-.pagination > span {
-    pointer-events: none;
-}
-.pagination svg {
-    height: 24px;
-    width: 24px;
-}
-.pagination > a.page-active {
-    background: #d3445b;
-    color: #fff;
-}
-.pagination > a:hover {
-    background: #d3445b;
-    color: #fff;
-}
+
 
 .footer{
     position: fixed;

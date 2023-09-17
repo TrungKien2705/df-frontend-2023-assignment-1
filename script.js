@@ -18,6 +18,7 @@ let baseUrl = window.location.protocol + "//" + window.location.host;
 let books = [];
 let topics = [];
 
+
 const  onClickModalAdd = () =>{
     clearForm();
     currentAction = 'Add';
@@ -26,7 +27,7 @@ const  onClickModalAdd = () =>{
 }
 
 
-function updateTitleModal() {
+const updateTitleModal = () => {
     if (currentAction === "Edit") {
         titleModal.textContent = 'Edit Book 📚';
         btnSubmit.textContent = 'Save';
@@ -153,6 +154,7 @@ const getTopicTitle = (topicId) => {
     return topic ? topic.title : "";
 }
 const setDataTable = (data) =>{
+    console.log("data", data)
     const tbody = document.querySelector("#table-book tbody");
     if (data.length > 0) {
         const topicById = {};
@@ -209,6 +211,7 @@ searchInput.addEventListener('change', (e) => {
     });
     setDataTable(filteredBooks);
 })
+
 
 
 
